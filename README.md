@@ -2,10 +2,10 @@
 
 A Django REST Framework backend for MediaBudgeter application, providing CRUD operations for media items (movies, TV shows, etc.).
 
-## 🚀 Live API
-**URL:** https://backendfinalspeitel.onrender.com/api/
+Live API
+URL: https://backendfinalspeitel.onrender.com/api/
 
-## 📋 Features
+ Features
 - User registration and authentication (Token-based)
 - CRUD operations for media items
 - Soft delete functionality
@@ -14,7 +14,7 @@ A Django REST Framework backend for MediaBudgeter application, providing CRUD op
 - CORS support for React Native frontend
 - Admin panel for data management
 
-## 🛠️ Tech Stack
+Tech Stack
 - Django 5.2.7
 - Django REST Framework
 - SQLite/PostgreSQL
@@ -22,9 +22,9 @@ A Django REST Framework backend for MediaBudgeter application, providing CRUD op
 - Gunicorn
 - WhiteNoise for static files
 
-## 📦 Installation & Setup
+Installation & Setup
 
-### Local Development
+Local Development
 
 1. Clone the repository:
    ```bash
@@ -58,14 +58,14 @@ A Django REST Framework backend for MediaBudgeter application, providing CRUD op
    python manage.py runserver 0.0.0.0:8000
    ```
 
-## 🔌 API Endpoints
+API Endpoints
 
-### Authentication
+Authentication
 - `POST /api/auth/register/` - Register new user
 - `POST /api/auth/login/` - Login user
 - `POST /api/auth/logout/` - Logout user
 
-### Media Items (CRUD)
+Media Items (CRUD)
 - `GET /api/media-items/` - List all media items
 - `POST /api/media-items/` - Create new media item
 - `GET /api/media-items/{id}/` - Get media item details
@@ -75,11 +75,11 @@ A Django REST Framework backend for MediaBudgeter application, providing CRUD op
 - `POST /api/media-items/{id}/restore/` - Restore deleted item
 - `POST /api/media-items/{id}/unmark_finished/` - Change status back to watching
 
-## 🗄️ Database
+Database
 Default: SQLite (db.sqlite3)
-Production: PostgreSQL recommended
+Production: PostgreSQL 
 
-## 📝 Example Request
+Example Request
 
 Register a new user:
 ```bash
@@ -100,7 +100,7 @@ Response:
 }
 ```
 
-## 🚀 Deployment (Render.com)
+Deployment (Render.com)
 
 1. Push to GitHub
 2. Create New Web Service on Render.com
@@ -110,15 +110,14 @@ Response:
 6. Add environment variables (if needed)
 7. Deploy
 
-## 👥 Team Members
-- Member 1
-- Member 2
-- Member 3
+Team Members
+- Andre Dizon
+- Mark Angelo Dela Cruz
+- Caryl Loise Dizon
 
-## 📄 License
-University of the Assumption - Final Project
 
-## 🔗 Links
+Links
 - Frontend Repository: https://github.com/AndreDizon/FrontEndFinalsPEITEL
-- Frontend (Snack): [Add Snack URL here]
+- Frontend (Snack): https://snack.expo.dev/@angenoise/final-project
 - Backend API: https://backendfinalspeitel.onrender.com/api/
+- Backend Repository: https: https://github.com/AndreDizon/BackEndFinalsPEITEL.git
