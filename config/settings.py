@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-l9%j*9zz^x(sn_gtb7lo5&_noe43gv7-wcgneakupl4&7)1b#^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'backendfinalspeitel.onrender.com',
+    'localhost',
+    '127.0.0.1',
+    '192.168.8.103',
+    '*'
+]
 
 
 # Application definition
@@ -55,6 +61,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # MUST be first for CORS
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this for static files on Render
     'django.contrib.sessions.middleware.SessionMiddleware',
     
     # REQUIRED BY django-allauth
@@ -125,6 +132,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# WhiteNoise configuration for serving static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # CORS Configuration
 CORS_ALLOW_ALL_ORIGINS = True
